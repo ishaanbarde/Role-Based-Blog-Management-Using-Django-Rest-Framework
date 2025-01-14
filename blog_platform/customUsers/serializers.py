@@ -1,3 +1,4 @@
+import email
 from rest_framework import serializers
 from .models import CustomUser
 
@@ -10,8 +11,9 @@ class custUser_Serialization(serializers.ModelSerializer):
     def create(self, validated_data):
         user = CustomUser(
             username=validated_data['username'],
-            role=validated_data.get('role', 'Member')
+            role=validated_data.get('role', 'Member'),
+            email=validated_data.get('email'),
         )
-        user.set_password(validated_data['password'])  # Hashing the password
+        user.set_password(validated_data['password'])
         user.save()
         return user

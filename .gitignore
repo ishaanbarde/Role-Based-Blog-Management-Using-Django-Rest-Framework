@@ -1,0 +1,14 @@
+*.pyc
+*.pyo
+__pycache__/
+*.sqlite3
+
+.vscode/
+.idea/
+
+*.swp
+*.so
+*.log
+
+staticfiles/
+media/
