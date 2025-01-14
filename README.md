@@ -14,9 +14,8 @@ This project is a simple Django-based web application for managing articles with
 - Python 3.8+
 - Django 4.x
 - Django Rest Framework (DRF)
-- SQLite (for development)
+- PostgreSQL
 - Git for version control
-- Docker (optional for containerization)
 
 ## Setup Instructions
 
